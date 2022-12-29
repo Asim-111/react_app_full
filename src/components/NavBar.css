@@ -1,0 +1,12 @@
+.navbar{
+    background-color:'#E0FFFF';
+}
+.navbar-expand-lg {
+    background-color: '#E0FFFF';
+}
+/* Modify brand and text color */
+ 
+.navbar-expand .navbar-brand,
+.navbar-custom .navbar-text {
+    color: '#E0FFFF';
+}
