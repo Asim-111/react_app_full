@@ -6,11 +6,11 @@ import { useState } from 'react';
 import Alert from './components/Alert';
 import { RegisterForm } from './components/RegisterForm';
 import { RegForm } from './components/RegForm';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom"
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+// } from "react-router-dom"
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -55,7 +55,9 @@ const changered = ()=>{
     
     <Navbar title ="TextUtils" link="searchlinks" mode = {mode} toggleMode={toggleMode} changegreen={changegreen} changered={changered} changeyellow={changeyellow}/>
     <Alert alert={alert}/>
-    <div className="container">
+    <TextForm showAlert={showAlert} titleoftext="ENTER TEXT FOR ANALYSIS!" mode = {mode} />
+    <RegForm showAlert={showAlert} mode = {mode}/>
+    {/* <div className="container">
     <BrowserRouter>
       <Routes>
         <Route path="/about" element={<About />} />
@@ -63,8 +65,7 @@ const changered = ()=>{
         <Route path="/" element={<TextForm showAlert={showAlert} titleoftext="ENTER TEXT FOR ANALYSIS!" mode = {mode} />} />
       </Routes>
     </BrowserRouter>
-  
-  </div>
+    </div> */}
   </>
   );
 }
