@@ -1,4 +1,5 @@
 # TEXT Utility App (Basic React Application)
+# APP LINK HOSTED ON github pages (https://asim-111.github.io/react_app_full/)
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
